@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 10px;
+}
+
+.search {
+    width: 300px;
+}
+
+.searh-wrapper {
+    grid-area: app-search;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(233, 171, 245);
+    border-radius: 14px;
+}
+
+.app-location {
+    margin: 10px;
+}
+
+.place {
+    font-size: 43px;
+}
+
+#input-search {
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(233, 171, 245);
+    border-radius: 10px;
+}
+
+#app-btn2 {
+    cursor: pointer;
+    border: none;
+    border-radius: 24px;
+    background: rgb(214, 178, 255);
+    color: rgb(0, 0, 0);
+    padding: 6px;
+}
+
+#app-btn2:hover {
+    background: rgb(200, 156, 252);
+}
+
+#app-btn1 {
+    cursor: pointer;
+    border: none;
+    border-radius: 24px;
+    background: rgb(223, 223, 223);
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    margin: 5px 0px;
+}
+
+#app-btn1:hover {
+    background: rgb(202, 202, 202);
+}
+
+.weather-detail-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-detail {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgb(233, 171, 245);
+    border-radius: 14px;
+    padding-bottom: 8px;
+}
+
+.weather-detail-left {
+    display: flex;
+    align-items: center;
+}
+
+.weather-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-items {
+    font-size: 18px;
+}
+
+.temp {
+    font-size: 64px;
+}
+
+.weather-list {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-list-item {
+    margin: 4px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(233, 171, 245);
+    border-radius: 10px;
+}
+
+.weather-list-date {
+    font-weight: 600;
+}
+
+.mob {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mob {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container {
+        display: none;
+    }
+}

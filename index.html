@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>weather</title>
+</head>
+
+<body>
+    <div class="mob">Made for Desktop, Switch to PC or Tablet</div>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <div class="searh-wrapper">
+                    <p>Enter Location</p>
+                    <input id="input-search" value="Bangalore" type="text" placeholder="Enter Location" />
+                    <button id="app-btn1">Search</button>
+                    <span>or</span>
+                    <button id="app-btn2">By Current Location</button>
+                </div>
+            </div>
+            <div class="app-location">
+                <div class="place">Bangalore</div>
+                <div class="date"></div>
+            </div>
+        </div>
+        <div class="weather-detail-wrapper">
+            <div class="weather-detail">
+                <div class="weather-detail-left">
+                    <div class="weather-img-wrapper">
+                        <img class="weather-img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+                        <span class="weather-img-text">Cloudy</span>
+                    </div>
+                    <div class="weather-items">
+                        <div id="pressure" class="weath-item">Pressure 1000 mb</div>
+                        <div id="humidity" class="weath-item">Humidity 45%</div>
+                        <div id="temperature" class="weath-item">Temperature 22&#8451</div>
+                    </div>
+                </div>
+                <div class="weather-detail-right">
+                    <div class="temp">22&#8451</div>
+                    <div class="feels-like">feels like 23&#8451</div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-list">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
