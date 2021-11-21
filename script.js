@@ -69,9 +69,9 @@ function appUIItems(respon) {
                 alt="" />
         </div>
         <div class="weather-list-text">${respon.daily[i].weather[0].main}</div>
-        <div class="weather-list-temp">MaxTemp<b>${respon.daily[i].temp.max}&#8451</b></div>
-        <div class="weather-list-pressure">Pressure ${respon.daily[i].pressure} mb</div>
-        <div class="weather-list-humidity">Humidity ${respon.daily[i].humidity} %</div>
+        <div class="weather-list-temp">MaxTemp  <b>${respon.daily[i].temp.max}&#8451</b></div>
+        <div class="weather-list-pressure">Pressure  <b>${respon.daily[i].pressure} mb</b></div>
+        <div class="weather-list-humidity">Humidity  <b>${respon.daily[i].humidity} %</b></div>
     </div>`
     }
 }
