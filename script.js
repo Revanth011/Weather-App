@@ -19,7 +19,6 @@ const getLocation1 = async (l) => {
 function getLocation2() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
-        	console.log(position.coords.latitude, position.coords.longitude);
             weatherData(position.coords.latitude, position.coords.longitude);
         });
     }
@@ -70,7 +69,7 @@ function appUIItems(respon) {
                 alt="" />
         </div>
         <div class="weather-list-text">${respon.daily[i].weather[0].main}</div>
-        <div class="weather-list-temp">MaxTemp ${respon.daily[i].temp.max}&#8451</div>
+        <div class="weather-list-temp">MaxTemp<b>${respon.daily[i].temp.max}&#8451</b></div>
         <div class="weather-list-pressure">Pressure ${respon.daily[i].pressure} mb</div>
         <div class="weather-list-humidity">Humidity ${respon.daily[i].humidity} %</div>
     </div>`
